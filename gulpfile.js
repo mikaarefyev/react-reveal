@@ -6,16 +6,16 @@ const flatten = require('gulp-flatten');
 const replace = require('gulp-replace');
 
 gulp.task('build', () =>
-  gulp.src('./src/**/*.js')
-    .pipe(flatten())
-    .pipe(replace("from './lib/", "from './"))
-    .pipe(replace("from './in-and-out/", "from './"))
-    .pipe(replace("from '../RevealBase';", "from './RevealBase';"))
-    .pipe(replace("from '../lib/globals';", "from './globals';"))
-    .pipe(replace("from '../lib/wrap';", "from './wrap';"))
-    .pipe(babel())
-    .pipe(uglify())
-    .pipe(gulp.dest('./'))
+    gulp.src('./src/**/*.js')
+  // .pipe(flatten())
+  // .pipe(replace("from './lib/", "from './"))
+  // .pipe(replace("from './in-and-out/", "from './"))
+  // .pipe(replace("from '../RevealBase';", "from './RevealBase';"))
+  // .pipe(replace("from '../lib/globals';", "from './globals';"))
+  // .pipe(replace("from '../lib/wrap';", "from './wrap';"))
+  // .pipe(babel())
+  // .pipe(uglify())
+  // .pipe(gulp.dest('./'))
 );
 
 gulp.task('clean', function () {
