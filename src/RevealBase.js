@@ -13,8 +13,7 @@ import { namespace, ssr, disableSsr, globalHide, hideAll, cascade, collapseend, 
 //import Step from './lib/Step';
 //import throttle from './lib/throttle';
 
-const
-  inOut = shape({
+const inOut = shape({
     make: func,
     duration: number.isRequired,
     delay: number.isRequired,
@@ -22,8 +21,8 @@ const
     count: number.isRequired,
     style: object.isRequired,
     reverse: bool,
-  }),
-  propTypes = {
+  });
+  const propTypes = {
     //when: any,
     //spy: any,
     //margin: number,
@@ -55,19 +54,19 @@ const
     ssrReveal: bool,
     collapseOnly: bool,
     ssrFadeout: bool,
-  },
-  defaultProps = {
+  };
+  const defaultProps = {
     fraction: 0.2,
     //when: true,
     refProp: 'ref',
     //margin: 0,
-  },
+  };
   //,
   //contextTypes = {
   //  stepper: object,
   //};
 
-  contextTypes = {
+  const contextTypes = {
     transitionGroup: object,
   };
 
