@@ -1,5 +1,5 @@
-export { default } from '../Reveal';
-export { default as Fade } from '../in-and-out/Fade';
+export { default } from './Reveal';
+export { default as Fade } from './Fade';
 //export { default as makeCarousel } from './makeCarousel';
 //export { default as hamburger } from './hamburger';
 //export { default as responsive } from './responsive';
@@ -20,7 +20,7 @@ export { default as Slide } from './Slide';
 //export { default as Tada } from './Tada';
 //export { default as Wobble } from './Wobble';
 export { default as Flip } from './Flip';
-export { default as Reveal } from '../Reveal';
+export { default as Reveal } from './Reveal';
 export { default as Rotate } from './Rotate';
 export { default as LightSpeed } from './LightSpeed';
-export { default as Zoom } from '../in-and-out/Zoom';
+export { default as Zoom } from './Zoom';
